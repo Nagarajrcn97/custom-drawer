@@ -1,15 +1,38 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <button @click="open">OPEN DRAWER</button>
+  <button @click="close">CLOSE DRAWER</button>
+  <CustomDrawer :show="show" :close="close">
+    <div>qwqwqwqw</div>
+    <div>qwqwqwqw</div>
+    <div>qwqwqwqw</div>
+    <div>qwqwqwqw</div>
+    <div>qwqwqwqw</div>
+    <div>qwqwqwqw</div>
+  </CustomDrawer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CustomDrawer from './components/CustomDrawer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CustomDrawer,
+  },
+  data: function() {
+    return {
+      show: false
+    };
+  },
+  methods: {
+    close() {
+      this.show = false
+    },
+    open() {
+      this.show = true
+      console.log('open', this.show)
+    }
   }
 }
 </script>
