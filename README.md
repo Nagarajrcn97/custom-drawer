@@ -1,24 +1,5 @@
 # custom-drawer
 
-## Project setup
-```
-npm install
-```
+https://user-images.githubusercontent.com/43608174/116985706-7b8b8d00-acea-11eb-885c-8ac871cb219b.mov
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
